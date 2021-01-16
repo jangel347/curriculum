@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de vida - Jeison Angel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="welcome_message">
+        <div class="block_container ta_center">
+            <h1>Jeison Steven Angel Castro</h1>
+            <label>Hoja de vida</label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="block_container ta_center">
+            <h2 class="title_menu">¿Qué deseas saber sobre Jeison?</h2>
+            <div class="menu_container">
+                <a href="perfil.html" class="menu_card">
+                    <img class="card_image" src="images/perfil.png" alt="Perfil" />
+                    <div class="card_text">
+                        <label>Perfil profesional</label>
+                    </div>
+                </a>
+                <a href="formacion-academica.html" class="menu_card">
+                    <img class="card_image" src="images/formacion-academica.png" alt="Formación académica" />
+                    <div class="card_text">
+                        <label>Formación académica</label>
+                    </div>
+                </a>
+                <a href="experiencia-laboral.html" class="menu_card">
+                    <img class="card_image" src="images/experiencia-laboral.png" alt="Eperiencias laboral" />
+                    <div class="card_text">
+                        <label>Experiencia Laboral</label>
+                    </div>
+                </a>
+                <a href="formacion-complementaria.html" class="menu_card">
+                    <img class="card_image" src="images/formacion-complementaria.png" alt="Formación complementaria" />
+                    <div class="card_text">
+                        <label>Formación complementaria</label>
+                    </div>
+                </a>
+                <a href="referencias.html" class="menu_card">
+                    <img class="card_image" src="images/referencias.png" alt="Referencias" />
+                    <div class="card_text">
+                        <label>Referencias</label>
+                    </div>
+                </a>
+                <a href="lo-mejor-de-jeison.html" class="menu_card">
+                    <img class="card_image" src="images/lo-mejor-de-jeison.png" alt="Lo mejor de Jeison" />
+                    <div class="card_text">
+                        <label>Lo mejor de Jeison</label>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="libraries/animations.js"></script>
+    <script>
+        disolve_up(document.getElementsByClassName("welcome_message")[0], 3, () => {
+            document.getElementsByClassName("title_menu")[0].classList.add("go_down");
+            let list_cards = document.getElementsByClassName("menu_card");
+            for (let i = 0; i < list_cards.length; i++) {
+                list_cards[i].classList.add("show");
+            }
+        });
+    </script>
+</body>
+
+</html>

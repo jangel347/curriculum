@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Jeison Angel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="welcome_message">
+        <div class="block_container ta_center">
+            <h1>Perfil</h1>
+            <label>Resumen de las cosas que Jeison sabe hacer</label>
+        </div>
+    </div>
+    <div class="container ta_center">
+        <div class="container_resume">
+            <div class="container_info">
+                <div class="image">
+                    <img src="images/resumen/jeison-angel.png" alt="Jeison Angel">
+                </div>
+                <div class="resume">
+                    <h3 class="name">Jeison Steven Angel Castro</h3>
+                    <div class="resume_item">
+                        <label class="item_title">Edad:</label>
+                        <label class="item_info">18 años</label>
+                    </div>
+                    <div class="resume_item">
+                        <label class="item_title">Tel:</label>
+                        <label class="item_info">(+57) 314 376 2190</label>
+                    </div>
+                    <div class="resume_item">
+                        <label class="item_title">Res:</label>
+                        <label class="item_info">(1) 920 1960</label>
+                    </div>
+                    <div class="resume_item">
+                        <label class="item_title">Email:</label>
+                        <label class="item_info">jestean347@gmail.com</label>
+                    </div>
+                </div>
+            </div>
+            <h3 class="subtitle_bw">Perfil profesional</h3>
+            <p class="profile">
+                Desarrollador con más de un año de experiencia en el sector de tecnología, desarrollando
+                funciones como la creación de sitios web, desarrollo de software según requerimientos y la aplicación de
+                pruebas para asegurar la calidad. Muy buen manejo de herramientas tecnológicas, lenguajes de
+                programación, bases de datos y sistemas de versionamiento. Habilidades en la resolución de problemas
+                aplicando la lógica de programación, metodologías ágiles y
+                herramientas virtuales.
+            </p>
+            <h3 class="subtitle_bw">Conocimientos</h3>
+            <div class="container_knowledges">
+                <div class="slider_knowledges" id="slider_knowledges">
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/javascript.png" alt="JavaScript" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">JavaScript</label>
+                        </div>
+                    </div>
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/php.png" alt="PHP" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">PHP</label>
+                        </div>
+                    </div>
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/python.png" alt="Python" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">Python</label>
+                        </div>
+                    </div>
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/photoshop.png" alt="Photoshop" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">Photoshop</label>
+                        </div>
+                    </div>
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/git.png" alt="GIT" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">GIT</label>
+                        </div>
+                    </div>
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/arduino.png" alt="Arduino" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">Arduino</label>
+                        </div>
+                    </div>
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/mysql.png" alt="MySQL" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">MySQL</label>
+                        </div>
+                    </div>
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/java.png" alt="Java" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">Java</label>
+                        </div>
+                    </div>
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/c.png" alt="C#" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">C#</label>
+                        </div>
+                    </div>
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/html.png" alt="HTML5" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">HTML5</label>
+                        </div>
+                    </div>
+                    <div class="knowledge_card">
+                        <div class="container_icon">
+                            <img src="images/resumen/css.png" alt="CSS3" class="card_icon">
+                        </div>
+                        <div class="card_info">
+                            <label class="info_title">CSS3</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="libraries/animations.js"></script>
+    <script>
+        disolve_up(document.getElementsByClassName("welcome_message")[0], 3, () => {
+            document.getElementsByClassName("container_info")[0].classList.add("go_down");
+            setInterval(slider_knowledges, 3000);
+        });
+    </script>
+</body>
+
+</html>
