@@ -15,10 +15,65 @@
             <label>Estudios realizados por Jeison</label>
         </div>
     </div>
+    <div class="vertical_player">
+        <div class="slider">
+            <div class="study_card">
+                <div class="block_container">
+                    <img src="images/formacion_academica/logo_sena.png" alt="SENA" class="logo_institution">
+                    <label class="career">
+                        Tecnólogo en análisis y desarrollo de sistemas de información
+                    </label>
+                    <label class="institution">
+                        Servicio Nacional De Aprendizaje (SENA)
+                    </label>
+                    <label class="certificated">
+                        Titulado 26 de noviembre del 2019 - Bogotá, Colombia
+                    </label>
+                </div>
+            </div>
+            <div class="study_card">
+                <div class="block_container">
+                    <img src="images/formacion_academica/logo_sena.png" alt="SENA" class="logo_institution">
+                    <label class="career">
+                        Técnico en programación de software
+                    </label>
+                    <label class="institution">
+                        Servicio Nacional De Aprendizaje (SENA)
+                    </label>
+                    <label class="certificated">
+                        Titulado 1 de diciembre del 2017 - Bogotá, Colombia
+                    </label>
+                </div>
+            </div>
+            <div class="study_card">
+                <div class="block_container">
+                    <img src="images/formacion_academica/logo_itip.png" alt="ITIP" class="logo_institution">
+                    <label class="career">
+                        Bachiller técnico industrial - Especialidad sistemas y computación
+                    </label>
+                    <label class="institution">
+                        Instituto Técnico Industrial Piloto
+                    </label>
+                    <label class="certificated">
+                        Titulado 7 de diciembre del 2017 - Bogotá, Colombia
+                    </label>
+                </div>
+            </div>
+        </div>
+        <i class="button button_up"></i>
+        <i class="button button_down"></i>
+    </div>
     <script src="libraries/animations.js"></script>
     <script>
         disolve_up(document.getElementsByClassName("welcome_message")[0], 3, () => {
             // document.getElementsByClassName("title_menu")[0].classList.add("go_down");
+            state_buttons(document.getElementsByClassName("study_card").length);
+            document.getElementsByClassName("button_up")[0].addEventListener("click",()=>{
+                slide_vertical(0);
+            });
+            document.getElementsByClassName("button_down")[0].addEventListener("click",()=>{
+                slide_vertical(1);
+            });
         });
     </script>
 </body>

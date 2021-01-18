@@ -2,7 +2,7 @@ html{margin:0;padding:0;scroll-behavior:smooth}
 body{margin:0;padding:0;position:relative}
 body *{font-family:Arial,Helvetica,sans-serif;transition:.5s;color:#1d1d1d}
 .container{display:inline-block;width:100%;min-height:100vh}
-.welcome_message{display:flex;width:100vw;height:100vh;align-items:center;background-color:#fff;position:absolute}
+.welcome_message{display:flex;width:100vw;height:100vh;align-items:center;background-color:#fff;position:absolute;z-index:3}
 .welcome_message h1{text-align:center;display:inline-block;width:800px;padding:10px 0;font-size:32px;animation:go_down .5s ease-in-out;color:#fff;background-color:#2e75b5}
 .welcome_message label{text-align:center;width:100%;display:inline-block;font-size:24px;animation:go_up .7s ease-in-out}
 .block_container{width:100%;display:inline-block}
@@ -36,8 +36,8 @@ to{transform:scale(1);opacity:1}
 .container_info .resume .name{display:inline-block;width:100%;margin:0;padding:0 0 15px;font-size:26px;color:#fff}
 .container_info .resume .resume_item{display:inline-block;width:100%}
 .container_info .resume .resume_item *{font-size:18px}
-.container_info .resume .resume_item .item_title{display:block;float:left;font-weight:700;margin-right:10px;color: #fff;}
-.container_info .resume .resume_item .item_info{display:block;float:left;color: #fff;}
+.container_info .resume .resume_item .item_title{display:block;float:left;font-weight:700;margin-right:10px;color:#fff}
+.container_info .resume .resume_item .item_info{display:block;float:left;color:#fff}
 .subtitle_bw{text-align:left;display:inline-block;width:96%;padding:10px 2%;font-size:20px;color:#fff;background-color:#2e75b5;text-transform:uppercase}
 .profile{display:inline-block;width:98%;padding:10px 1%;text-align:justify}
 .container_knowledges{display:inline-block;width:100%;padding:5px 0;margin:0;overflow:hidden}
@@ -47,3 +47,13 @@ to{transform:scale(1);opacity:1}
 .container_knowledges .knowledge_card .container_icon .card_icon{width:96px;height:96px}
 .container_knowledges .knowledge_card .card_info{display:inline-block;width:100%;height:30px}
 .container_knowledges .knowledge_card .card_info .info_title{display:inline-block;width:100%;font-weight:700;margin:5px 0;font-size:16px;text-transform:capitalize}
+.vertical_player{width:100vw;height:100vh;overflow:hidden;position:relative;display:flex;align-items:center}
+.vertical_player .slider{width:800px;height:80vh;width:100%}
+.vertical_player .study_card{width:100%;height:100%;display:flex;align-items:center}
+.vertical_player .study_card .logo_institution{display:block;margin:0 auto 15px;width:150px;height:150px}
+.vertical_player .study_card .career{display:block;width:60%;text-align:center;font-size:30px;margin:0 auto 15px;font-weight:700;color:#2e75b5}
+.vertical_player .study_card .institution{display:block;width:60%;font-size:20px;text-align:center;margin:0 auto 10px;font-weight:600;text-transform:capitalize}
+.vertical_player .study_card .certificated{display:block;width:60%;font-size:20px;text-align:center;margin:auto}
+.vertical_player .button{background-color:#dfdfdfa8;position:absolute;display:block;width:10vw;height:5vh;min-height:20px;background-size:30px 15px;background-repeat:no-repeat;background-position:center;cursor:pointer;-webkit-box-shadow:0 0 22px -14px rgba(0,0,0,.75);-moz-box-shadow:0 0 22px -14px rgba(0,0,0,.75);box-shadow:0 0 22px -14px rgba(0,0,0,.75)}
+.vertical_player .button_up{top:0;left:45vw;margin-top:2.5vh;border-radius:8px 8px 0 0;background-image:url(../images/resources/icon_up.png)}
+.vertical_player .button_down{bottom:0;left:45vw;margin-bottom:2.5vh;border-radius:0 0 8px 8px;background-image:url(../images/resources/icon_down.png)}
